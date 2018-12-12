@@ -1,0 +1,1 @@
+/*jQuery is a JavaScript library written to simplify the process of writing JavaScript code*/
