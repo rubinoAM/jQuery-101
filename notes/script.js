@@ -30,6 +30,22 @@ $('#toggle').click(function(){
     $('#thing').toggle();
 });
 
+$('#html').click(function(){
+    $('#thing').html("<p>FLASH THE MESSAGE</p>");
+});
+
+$('#text').click(function(){
+    $('#thing').text("<p>LSD</p>");
+});
+
+$('#css').click(function(){
+    $('#thing').css({
+        "background-color":"green",
+        "border-radius":"5px",
+        "font-size":"30px"
+    }); //Takes a JavaScript object: Key = String for CSS Property & Value = What You Want To Apply
+});
+
 $('#thing').click(function(){
     //Give it a second
 });
