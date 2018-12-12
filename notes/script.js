@@ -46,6 +46,62 @@ $('#css').click(function(){
     }); //Takes a JavaScript object: Key = String for CSS Property & Value = What You Want To Apply
 });
 
-$('#thing').click(function(){
-    //Give it a second
+$('#add-class').click(function(){
+    $('#thing').addClass('btn-danger');
+});
+
+$('#remove-class').click(function(){
+    $('#thing').removeClass('btn-danger');
+});
+
+$('#toggle-class').click(function(){
+    $('#thing').toggleClass('btn-danger');
+});
+
+$('#prepend').click(function(){
+    $('#thing').prepend('WOOF');
+});
+
+$('#append').click(function(){
+    $('#thing').append('MEOW');
+});
+
+$('#fade-out').click(function(){
+    $('#thing').fadeToggle(300);
+})
+
+$('#slide').click(function(){
+    $('#thing').slideToggle(300);
+})
+
+$('#animate').click(function(){
+    $('#thing').animate({
+        "background-color":"chartreuse",
+        "height":"200px",
+        "margin-left":"100px",
+    },300);
+})
+
+$('#fade-in').click(function(){
+    $("#dizzang").fadeIn();
+})
+
+$('#position').click(function(){
+    let pos = $('#thing').position();
+    $('#thing').html(`Position: ${pos.top} ${pos.left}`);
+});
+
+$('#wrap-all').click(function(){
+    $('.btn').wrapAll("<ul><li></li></ul>");
+});
+
+$('#replace').click(function(){
+    $('#thing').replaceWith("<button class='btn btn-warning' id='thing'>DOG</button>");
+});
+
+$('#squish').click(function(){
+    $('#thing').css({
+        "width":"50px",
+        "height":"200px",
+    })
 });
